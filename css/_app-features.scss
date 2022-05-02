@@ -1,0 +1,102 @@
+.app_features {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+
+  .feature_content {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+
+    .feature_card {
+      border-radius: 35px;
+      text-align: center;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.2s;
+      background: rgb(198, 30, 30);
+      background: radial-gradient(
+        circle,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 1) 100%
+      );
+      border: 2px solid transparent;
+
+      .icon {
+        width: 110px;
+        height: 110px;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        transition: 0.2s;
+        border: 2px solid transparent;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #f93b42;
+        margin-bottom: 15px;
+        transition: 0.2s;
+      }
+      p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #b1b1b1;
+      }
+
+      &:hover {
+        background: rgb(198, 30, 30);
+        background: radial-gradient(
+          circle,
+          rgb(75, 20, 20) 0%,
+          rgba(22, 22, 22, 1) 60%,
+          rgba(22, 22, 22, 1) 100%
+        );
+        border: 2px solid #630303;
+        box-shadow: none;
+        h3 {
+          color: #fff;
+        }
+        .icon {
+          box-shadow: none;
+          border: 2px solid #630303;
+        }
+      }
+    }
+  }
+  .feature_bg {
+    background: rgb(22, 22, 22);
+    background: linear-gradient(
+        90deg,
+        rgba(22, 22, 22, 0.1) 0%,
+        rgba(22, 22, 22, 0.1) 100%
+      ),
+      url(../assets/app-feature-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

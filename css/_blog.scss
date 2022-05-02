@@ -1,0 +1,117 @@
+.blog {
+  width: 100%;
+
+  .blog_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    row-gap: 40px;
+    column-gap: 40px;
+
+    > .high_card {
+      border-radius: 20px;
+      padding: 16px;
+
+      .image {
+        width: 100%;
+        height: 210px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .info {
+        padding: 0 10px 14px;
+        .user_date {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 15px;
+          flex-wrap: wrap;
+          column-gap: 15px;
+          row-gap: 15px;
+
+          > div {
+            display: flex;
+            align-items: center;
+
+            column-gap: 5px;
+
+            .icon {
+              width: fit-content;
+              height: fit-content;
+              display: flex;
+            }
+          }
+
+          .user {
+            .icon {
+              background: #3b3b3b;
+              border-radius: 50%;
+              padding: 5px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 28px;
+              color: #fff;
+            }
+          }
+          .date {
+            p {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 28px;
+              color: #dfdfdf;
+            }
+          }
+        }
+
+        h4 {
+          margin-top: 15px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+          color: #fff;
+        }
+
+        > p {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: #b1b1b1;
+          margin-top: 10px;
+        }
+        button {
+          margin-top: 30px;
+          border: 0;
+          outline: none;
+          color: #fff;
+          font-family: "Maven Pro";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          text-align: center;
+          color: #fff;
+          padding: 19px 40px;
+          width: 100%;
+          max-width: 220px;
+          border-radius: 60px;
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            background: #161616;
+            box-shadow: -3px -3px 8px rgba(255, 255, 255, 0),
+              6px 6px 12px rgba(0, 0, 0, 0),
+              inset -3px -3px 8px rgba(255, 255, 255, 0.1),
+              inset 5px 5px 10px #000;
+            color: #f93b42;
+          }
+        }
+      }
+    }
+  }
+}

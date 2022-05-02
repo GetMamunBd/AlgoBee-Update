@@ -1,0 +1,182 @@
+.tile_new {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+#tile-new .tab-pane {
+  padding: 15px;
+}
+#tile-new .nav-tabs {
+  position: relative;
+  border: none;
+  border-radius: 90px;
+  padding: 10px;
+  background: #161616;
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.1), 6px 6px 12px #000;
+}
+#tile-new .nav-tabs li {
+  margin: 0px;
+}
+#tile-new .nav-tabs li a {
+  position: relative;
+  margin: 0px auto;
+  padding: 15px 40px;
+  font-size: 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#tile-new .nav-tabs a:hover {
+  color: #f93b42;
+}
+#tile-new .slide {
+  display: inline-block;
+  width: 216px;
+  height: 64px;
+  border-radius: 64px;
+  background-color: #161616;
+  box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1),
+    inset 4px 4px 8px #000;
+  position: absolute;
+  z-index: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: all 0.4s linear;
+}
+#tile-new .nav-tabs .active {
+  background-color: transparent;
+  border: none;
+  color: #f93b42;
+}
+
+.pricing {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 0;
+
+  .price_content {
+    .nav-tabs {
+      width: 100%;
+      max-width: 452px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    .tab-content {
+      .monthly_content,
+      .annualy_content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 60px;
+        text-align: center;
+
+        .high_card {
+          padding: 40px;
+          border-radius: 35px;
+          height: fit-content;
+
+          .card_head {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #2a2a2a;
+            margin-bottom: 30px;
+
+            p {
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 28px;
+              color: #fff;
+              margin-bottom: 20px;
+            }
+            h3 {
+              font-weight: 600;
+              font-size: 54px;
+              color: #fff;
+              sub,
+              sup {
+                font-size: 40%;
+              }
+              sup {
+                top: -30px;
+              }
+              sub {
+                bottom: -3px;
+                left: -15px;
+              }
+            }
+          }
+          .card_body {
+            margin-bottom: 60px;
+            ul {
+              display: flex;
+              flex-direction: column;
+              row-gap: 40px;
+            }
+          }
+        }
+        .professional.high_card {
+          .card_head {
+            p.title {
+              color: #f93b42;
+            }
+            h3 {
+              font-weight: 600;
+              font-size: 54px;
+              color: #fff;
+              sub,
+              sup {
+                font-size: 40%;
+              }
+              sup {
+                top: -30px;
+              }
+              sub {
+                bottom: -3px;
+                left: 0px;
+              }
+            }
+            p.recommended {
+              display: inline-block;
+              margin: 0;
+              border-radius: 50px;
+              background: #801417;
+              padding: 6px 25px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 28px;
+              text-transform: uppercase;
+              color: #fff;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pricing_bg {
+    background: rgb(22, 22, 22);
+    background: linear-gradient(
+        180deg,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.9) 20%,
+        rgba(22, 22, 22, 0.9) 80%,
+        rgba(22, 22, 22, 1) 100%
+      ),
+      url(../assets/pricing-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

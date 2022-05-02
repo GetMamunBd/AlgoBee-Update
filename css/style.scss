@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+body {
+  background: #161616;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-color: #f93b42 transparent;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f93b42; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+/* *******************REUSABLE ITEMS START****************** */
+.container {
+  width: 100%;
+  max-width: 1680px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav_bg {
+  background-color: rgba(22, 22, 22, 0.95);
+  box-shadow: 6px 0 35px #000;
+}
+
+.btn_accent {
+  font-weight: 600;
+  display: inline-block;
+  background-color: #161616;
+  color: #f93b42;
+  padding: 15px;
+  box-shadow: inset -3px -3px 6px rgba(255, 106, 111, 0.2),
+    inset 6px 6px 12px #000;
+  border-radius: 50px;
+  transition: 0.2s;
+
+  .inside {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    background: #161616;
+    padding: 12px 45px;
+    box-shadow: -3px -3px 8px rgba(255, 106, 111, 0.2), 6px 6px 12px #000;
+    border-radius: 40px;
+    transition: 0.2s;
+
+    .material-symbols-outlined {
+      transform: translateX(0);
+      transition: 0.2s;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+    box-shadow: inset -3px -3px 6px rgba(255, 106, 111, 0.2),
+      inset 4px 4px 8px #000;
+    .inside {
+      box-shadow: none;
+      .material-symbols-outlined {
+        transform: translateX(5px);
+      }
+    }
+    text-decoration: none;
+  }
+}
+
+.btn_nonaccent {
+  font-weight: 600;
+  display: inline-block;
+  background-color: #161616;
+  color: #fff;
+  padding: 15px;
+  box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1),
+    inset 6px 6px 12px #000;
+  border-radius: 50px;
+  transition: 0.2s;
+
+  .inside {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    background: #161616;
+    padding: 12px 45px;
+    box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.1), 6px 6px 12px #000;
+    border-radius: 40px;
+    transition: 0.2s;
+
+    .material-symbols-outlined {
+      transform: translateX(0);
+      transition: 0.2s;
+    }
+  }
+
+  &:hover {
+    color: #f93b42;
+    box-shadow: inset -3px -3px 6px rgba(236, 236, 236, 0.1),
+      inset 4px 4px 8px #000;
+    .inside {
+      box-shadow: none;
+
+      .material-symbols-outlined {
+        transform: translateX(5px);
+      }
+    }
+    text-decoration: none;
+  }
+}
+
+.high_card {
+  background: #161616;
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.1), 6px 6px 12px #000;
+  transition: 0.2s;
+}
+.deep_card {
+  background-color: #161616;
+  box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1),
+    inset 4px 4px 8px #000;
+  transition: 0.2s;
+}
+
+.top {
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+
+  .sub_tag {
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50px;
+    background: #500f11;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translateY(13px);
+  background: #f93b42 !important;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(-45deg) translateY(-13px);
+  background: #f93b42 !important;
+}
+
+.nav_active {
+  transform: translateX(0) !important;
+  display: flex !important;
+  opacity: 1 !important;
+}
+.nav_overflw {
+  overflow-x: visible !important;
+}
+/* *******************REUSABLE ITEMS END****************** */
+
+/* *******************Navbar Section Start****************** */
+@import "header";
+@import "app-features";
+@import "how-it-work";
+@import "pricing";
+@import "our-connection";
+@import "blog";
+@import "contact-us";
+@import "footer";
+@import "responsive";
+/* *******************Navbar Section END****************** */
