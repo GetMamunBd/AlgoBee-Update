@@ -1009,6 +1009,7 @@ header .slider .content .slider_image img {
 
 .roadmap {
   width: 100%;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -1055,6 +1056,10 @@ header .slider .content .slider_image img {
   height: -moz-fit-content;
   height: fit-content;
   text-align: right;
+  background: radial-gradient(circle, #161616 0%, #161616 50%, #161616 100%);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .roadmap .step h3 {
@@ -1097,6 +1102,10 @@ header .slider .content .slider_image img {
   top: 0;
   top: -8px;
   left: 61px;
+}
+
+.roadmap .step:hover {
+  background: radial-gradient(circle, #4b1414 0%, #161616 50%, #161616 100%);
 }
 
 .roadmap .left_steps {
@@ -1147,6 +1156,21 @@ header .slider .content .slider_image img {
   margin: 0 auto;
   margin-top: 80px;
   border-radius: 5px;
+}
+
+.roadmap .roadmap_bg {
+  background: #161616;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(20%, rgba(22, 22, 22, 0.8)), color-stop(80%, rgba(22, 22, 22, 0.8)), to(#161616)), url(../assets/connection-bg.png);
+  background: linear-gradient(180deg, #161616 0%, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.8) 80%, #161616 100%), url(../assets/connection-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .connection {
@@ -1202,8 +1226,8 @@ header .slider .content .slider_image img {
 
 .connection .conntection_bg {
   background: #161616;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(20%, rgba(22, 22, 22, 0.8)), color-stop(80%, rgba(22, 22, 22, 0.8)), to(#161616)), url(../assets/connection-bg.png);
-  background: linear-gradient(180deg, #161616 0%, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.8) 80%, #161616 100%), url(../assets/connection-bg.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(20%, rgba(22, 22, 22, 0.8)), color-stop(80%, rgba(22, 22, 22, 0.8)), to(#161616)), url(../assets/roadmap-bg.png);
+  background: linear-gradient(180deg, #161616 0%, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.8) 80%, #161616 100%), url(../assets/roadmap-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
