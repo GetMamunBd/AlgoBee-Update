@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3098.154" height="836.458" viewBox="0 0 3098.154 836.458">
+  <g id="bonfida" transform="translate(-494.846 -77.173)">
+    <g id="Layer_10" data-name="Layer 10" transform="translate(498.22 77.22)">
+      <line id="Line_1" data-name="Line 1" x2="0.224" y2="189.999" transform="translate(362.119 11.78)" fill="none" stroke="#6868fc" stroke-linejoin="round" stroke-width="6.16"/>
+      <line id="Line_2" data-name="Line 2" x1="161.527" y1="95.074" transform="translate(552.09 525.997)" fill="none" stroke="#6868fc" stroke-linejoin="round" stroke-width="6.16"/>
+      <line id="Line_3" data-name="Line 3" y1="95.074" x2="161.527" transform="translate(12.214 525.997)" fill="none" stroke="#6868fc" stroke-linejoin="round" stroke-width="6.16"/>
+      <path id="Path_1" data-name="Path 1" d="M374.054,431.9,185.21,322.815,374.054,213.78,562.646,323.262Z" transform="translate(-11.972 -13.864)" fill="none" stroke="#77e3ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.24"/>
+      <path id="Path_2" data-name="Path 2" d="M374.054,656.875l-188.6-108.243L185.21,330.85,374.054,439.932Z" transform="translate(-11.972 -21.899)" fill="none" stroke="#4acbdc" stroke-linejoin="round" stroke-width="9.24"/>
+      <path id="Path_3" data-name="Path 3" d="M387.97,656.908,576.562,549.149V331.33L387.97,439.965Z" transform="translate(-25.888 -21.932)" fill="none" stroke="#07abc5" stroke-linejoin="round" stroke-width="9.24"/>
+      <path id="Path_4" data-name="Path 4" d="M713.617,621.116V215.338L362.194,12.44,10.78,215.338V621.116l351.414,202.9Z" transform="translate(0 -0.045)" fill="none" stroke="#7c7cff" stroke-miterlimit="10" stroke-width="21.55"/>
+      <path id="Path_5" data-name="Path 5" d="M11.39,230.67,362.236,433.559,714.227,230.67" transform="translate(-0.042 -15.023)" fill="none" stroke="#7c7cff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="21.55"/>
+      <line id="Line_4" data-name="Line 4" y2="405.433" transform="translate(362.771 418.536)" fill="none" stroke="#7c7cff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="21.55"/>
+    </g>
+    <text id="Bonfida-2" data-name="Bonfida" transform="translate(1389 722)" fill="#fff" font-size="647" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Bonfida</tspan></text>
+  </g>
+</svg>

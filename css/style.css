@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  scrollbar-color: #f93b42 transparent;
+  scrollbar-color: #5a5a5a transparent;
   scrollbar-width: thin;
 }
 
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f93b42;
+  background-color: #5a5a5a;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
@@ -402,6 +402,7 @@ header .slider {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-x: hidden;
 }
 
 header .slider .mouse_down {
@@ -1006,6 +1007,148 @@ header .slider .content .slider_image img {
   z-index: -1;
 }
 
+.roadmap {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.roadmap .all_steps {
+  width: 100%;
+  max-width: 843px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 141px 1fr;
+      grid-template-columns: 1fr 141px 1fr;
+}
+
+.roadmap .all_steps .first_step {
+  margin-bottom: 178px;
+}
+
+.roadmap .all_steps .second_step,
+.roadmap .all_steps .fourth_step {
+  text-align: left;
+  margin-top: 178px;
+}
+
+.roadmap .all_steps .second_step .line_hr,
+.roadmap .all_steps .fourth_step .line_hr {
+  right: 100%;
+  left: unset;
+}
+
+.roadmap .all_steps .second_step .line_hr::after,
+.roadmap .all_steps .fourth_step .line_hr::after {
+  top: 0;
+  top: -8px;
+  left: unset;
+  right: 61px;
+}
+
+.roadmap .step {
+  padding: 30px;
+  max-width: 351px;
+  border-radius: 15px;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: right;
+}
+
+.roadmap .step h3 {
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.roadmap .step h3 span {
+  color: #f93b42;
+  font-weight: bold;
+}
+
+.roadmap .step p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #b1b1b1;
+}
+
+.roadmap .step .line_hr {
+  position: absolute;
+  height: 4px;
+  width: 70px;
+  background: #b1b1b1;
+  border-radius: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 100%;
+}
+
+.roadmap .step .line_hr::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f93b42;
+  border-radius: 50%;
+  top: 0;
+  top: -8px;
+  left: 61px;
+}
+
+.roadmap .left_steps {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 178px;
+}
+
+.roadmap .right_steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 178px;
+  margin-top: 178px;
+}
+
+.roadmap .right_steps .step .line_hr {
+  right: 100%;
+  left: unset;
+}
+
+.roadmap .right_steps .step .line_hr::after {
+  top: 0;
+  top: -8px;
+  left: unset;
+  right: 61px;
+}
+
+.roadmap .center_line {
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  border: 2px solid #b1b1b1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
 .connection {
   position: relative;
   width: 100%;
@@ -1014,7 +1157,6 @@ header .slider .content .slider_image img {
 
 .connection .all_connection {
   width: 100%;
-  max-width: 1160px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1030,10 +1172,11 @@ header .slider .content .slider_image img {
 }
 
 .connection .all_connection a {
-  height: 130px;
+  height: 100px;
   width: 100%;
-  max-width: 360px;
-  padding: 40px;
+  max-width: 290px;
+  min-width: 280px;
+  padding: 30px;
   display: inline-block;
   text-align: center;
   border-radius: 15px;
@@ -1431,6 +1574,17 @@ footer .content .section.social ul a:hover {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .connection .all_connection {
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .connection .all_connection a {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .login_btn {
     display: none;
@@ -1595,6 +1749,28 @@ footer .content .section.social ul a:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .connection .all_connection a {
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .roadmap .all_steps {
+    -ms-grid-columns: 1fr 70px 1fr;
+        grid-template-columns: 1fr 70px 1fr;
+  }
+  .roadmap .step .line_hr {
+    width: 37px;
+  }
+  .roadmap .step .line_hr::after {
+    left: 25px;
+  }
+  .roadmap .all_steps .second_step .line_hr::after,
+  .roadmap .all_steps .fourth_step .line_hr::after {
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -1613,6 +1789,12 @@ footer .content .section.social ul a:hover {
   }
   .how_it_work .tab_section .tab-content .tab_items .info {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .roadmap .center_line {
+    margin-top: 96px;
   }
 }
 
@@ -1643,6 +1825,21 @@ footer .content .section.social ul a:hover {
   header .bottom-bg {
     width: 186%;
     bottom: -50px;
+  }
+  .roadmap .center_line {
+    display: none;
+  }
+  .roadmap .all_steps {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .roadmap .all_steps .step {
+    max-width: unset;
+    margin: 0;
+  }
+  .roadmap .all_steps .step .line_hr {
+    display: none;
   }
 }
 
@@ -1751,7 +1948,7 @@ li {
   }
   .pricing .pricing_bg {
     background-size: 509%;
-    top: -172px;
+    top: -0px;
     bottom: unset;
   }
   .connection .conntection_bg {
@@ -1761,6 +1958,13 @@ li {
     background-size: 234%;
     top: 0;
     bottom: unset;
+  }
+  .blog .blog_content > .high_card {
+    width: calc(100vw - 40px);
+  }
+  .pricing .price_content .tab-content .monthly_content .high_card,
+  .pricing .price_content .tab-content .annualy_content .high_card {
+    border-radius: 15px;
   }
 }
 

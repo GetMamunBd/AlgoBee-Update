@@ -5,6 +5,16 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .connection .all_connection {
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  .connection .all_connection a {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .login_btn {
     display: none;
@@ -145,6 +155,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .connection .all_connection a {
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .roadmap .all_steps {
+    grid-template-columns: 1fr 70px 1fr;
+  }
+
+  .roadmap .step .line_hr {
+    width: 37px;
+  }
+
+  .roadmap .step .line_hr::after {
+    left: 25px;
+  }
+  .roadmap .all_steps .second_step .line_hr::after,
+  .roadmap .all_steps .fourth_step .line_hr::after {
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -160,6 +194,12 @@
   }
   .how_it_work .tab_section .tab-content .tab_items .info {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .roadmap .center_line {
+    margin-top: 96px;
   }
 }
 
@@ -189,7 +229,25 @@
     width: 186%;
     bottom: -50px;
   }
+
+  .roadmap .center_line {
+    display: none;
+  }
+
+  .roadmap .all_steps {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .roadmap .all_steps .step {
+    max-width: unset;
+    margin: 0;
+
+    .line_hr {
+      display: none;
+    }
+  }
 }
+
 @media screen and (max-width: 480px) {
   .connection .all_connection {
     grid-template-columns: 1fr;
@@ -297,7 +355,7 @@
 
   .pricing .pricing_bg {
     background-size: 509%;
-    top: -172px;
+    top: -0px;
     bottom: unset;
   }
 
@@ -314,5 +372,14 @@
     background-size: 234%;
     top: 0;
     bottom: unset;
+  }
+
+  .blog .blog_content > .high_card {
+    width: calc(100vw - 40px);
+  }
+
+  .pricing .price_content .tab-content .monthly_content .high_card,
+  .pricing .price_content .tab-content .annualy_content .high_card {
+    border-radius: 15px;
   }
 }

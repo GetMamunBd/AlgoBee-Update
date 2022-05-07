@@ -1,0 +1,115 @@
+.roadmap {
+  width: 100%;
+  padding-bottom: 100px;
+
+  .all_steps {
+    width: 100%;
+    max-width: 843px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 141px 1fr;
+
+    .first_step {
+      margin-bottom: 178px;
+    }
+    .second_step,
+    .fourth_step {
+      text-align: left;
+      margin-top: 178px;
+
+      .line_hr {
+        right: 100%;
+        left: unset;
+
+        &::after {
+          top: 0;
+          top: -8px;
+          left: unset;
+          right: 61px;
+        }
+      }
+    }
+  }
+  .step {
+    padding: 30px;
+    max-width: 351px;
+    border-radius: 15px;
+    position: relative;
+    height: fit-content;
+    text-align: right;
+
+    h3 {
+      font-weight: normal;
+      font-size: 22px;
+      margin-bottom: 20px;
+
+      span {
+        color: #f93b42;
+        font-weight: bold;
+      }
+    }
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #b1b1b1;
+    }
+    .line_hr {
+      position: absolute;
+      height: 4px;
+      width: 70px;
+      background: #b1b1b1;
+      border-radius: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #f93b42;
+        border-radius: 50%;
+        top: 0;
+        top: -8px;
+        left: 61px;
+      }
+    }
+  }
+  .left_steps {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    row-gap: 178px;
+  }
+  .right_steps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 178px;
+    margin-top: 178px;
+
+    .step .line_hr {
+      right: 100%;
+      left: unset;
+
+      &::after {
+        top: 0;
+        top: -8px;
+        left: unset;
+        right: 61px;
+      }
+    }
+  }
+  .center_line {
+    width: 4px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #b1b1b1;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 5px;
+  }
+}
