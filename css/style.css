@@ -431,14 +431,15 @@ header .slider .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .slider .content .info {
-  width: 50%;
+  width: 100%;
   max-width: 750px;
+  text-align: center;
 }
 
 header .slider .content .info .tagline {
@@ -454,6 +455,7 @@ header .slider .content .info h1 {
   line-height: 60px;
   color: #fff;
   max-width: 566px;
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -473,6 +475,7 @@ header .slider .content .info p {
 header .slider .content .slider_image {
   width: 50%;
   max-width: 625px;
+  display: none;
 }
 
 header .slider .content .slider_image img {
