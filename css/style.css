@@ -781,6 +781,10 @@ header .slider .content .slider_image img {
   background-size: 100%;
 }
 
+span.checkmark.material-symbols-outlined {
+  font-weight: bold;
+}
+
 .tile_new {
   width: 100%;
   max-width: 1200px;
