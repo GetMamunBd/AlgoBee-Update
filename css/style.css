@@ -712,9 +712,10 @@ header .slider .content .slider_image img {
 }
 
 .how_it_work .tab_section .tab-content .tab_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -730,6 +731,8 @@ header .slider .content .slider_image img {
 }
 
 .how_it_work .tab_section .tab-content .tab_items .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 
@@ -737,6 +740,10 @@ header .slider .content .slider_image img {
   font-weight: 600;
   font-size: 32px;
   color: #fff;
+  margin-bottom: 10px;
+}
+
+.how_it_work .tab_section .tab-content .tab_items .info p {
   margin-bottom: 30px;
 }
 
@@ -1768,6 +1775,11 @@ footer .content .section.social ul a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .how_it_work .tab_section .tab-content .tab_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .how_it_work .tab_section .tab-content .tab_items .image {
     width: 40%;
   }
@@ -1900,61 +1912,17 @@ footer .content .section.social ul a:hover {
     margin-bottom: 30px;
   }
   .pricing .price_content .tab-content .monthly_content .high_card .card_head p,
-  .pricing
-.price_content
-.tab-content
-.annualy_content
-.high_card
-.card_head
-p {
+  .pricing .price_content .tab-content .annualy_content .high_card .card_head p {
     font-size: 18px;
   }
-  .pricing
-.price_content
-.tab-content
-.monthly_content
-.high_card
-.card_head
-h3,
-  .pricing
-.price_content
-.tab-content
-.annualy_content
-.high_card
-.card_head
-h3,
-  .pricing
-.price_content
-.tab-content
-.monthly_content
-.professional.high_card
-.card_head
-h3,
-  .pricing
-.price_content
-.tab-content
-.annualy_content
-.professional.high_card
-.card_head
-h3 {
+  .pricing .price_content .tab-content .monthly_content .high_card .card_head h3,
+  .pricing .price_content .tab-content .annualy_content .high_card .card_head h3,
+  .pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3,
+  .pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 {
     font-size: 40px;
   }
-  .pricing
-.price_content
-.tab-content
-.monthly_content
-.high_card
-.card_body
-ul
-li,
-  .pricing
-.price_content
-.tab-content
-.annualy_content
-.high_card
-.card_body
-ul
-li {
+  .pricing .price_content .tab-content .monthly_content .high_card .card_body ul li,
+  .pricing .price_content .tab-content .annualy_content .high_card .card_body ul li {
     font-size: 14px;
   }
   .pricing .price_content .tab-content .monthly_content .high_card,

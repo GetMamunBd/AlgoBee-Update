@@ -10,6 +10,7 @@
     row-gap: 30px;
     column-gap: 30px;
   }
+
   .connection .all_connection a {
     width: 30%;
   }
@@ -23,8 +24,10 @@
   .navbar nav a.brand {
     width: 150px;
   }
+
   .btn_accent {
     padding: 10px;
+
     .inside {
       padding: 10px 30px;
     }
@@ -69,6 +72,7 @@
     z-index: 99;
     transition: 0.2s;
   }
+
   .burger .line1,
   .burger .line2,
   .burger .line3 {
@@ -88,27 +92,34 @@
     flex-direction: column-reverse;
     padding-top: 150px;
   }
+
   header .slider .content .slider_image,
   header .slider .content .info {
     width: 100%;
     text-align: center;
   }
+
   header .slider .content .info h1 {
     max-width: unset;
   }
+
   header .slider .mouse_down {
     display: none;
   }
+
   header {
     height: unset;
   }
+
   header .top-bg {
     background-size: 150%;
   }
+
   header .bottom-bg {
     width: 100%;
     bottom: -50px;
   }
+
   footer .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,28 +140,39 @@
     background: #161616;
     border-radius: 60px;
   }
+
   .how_it_work #tile-1 .slide {
     display: none;
   }
+
   .how_it_work .nav-justified .nav-item {
     flex-basis: unset;
     flex-grow: unset;
   }
+
   #tile-1 .nav-tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 20px;
   }
+
   #tile-1 .nav-tabs li a {
     // width: 270px;
     justify-content: flex-start;
   }
+
+  .how_it_work .tab_section .tab-content .tab_items {
+    display: flex;
+  }
+
   .how_it_work .tab_section .tab-content .tab_items .image {
     width: 40%;
   }
+
   .how_it_work .tab_section .tab-content .tab_items .info {
     width: 50%;
   }
+
   .connection .all_connection {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,6 +197,7 @@
   .roadmap .step .line_hr::after {
     left: 25px;
   }
+
   .roadmap .all_steps .second_step .line_hr::after,
   .roadmap .all_steps .fourth_step .line_hr::after {
     right: 25px;
@@ -185,13 +208,16 @@
   header .slider .content {
     padding-top: 60px;
   }
+
   .how_it_work .tab_section .tab-content .tab_items {
     flex-direction: column;
     row-gap: 60px;
   }
+
   .how_it_work .tab_section .tab-content .tab_items .image {
     width: 60%;
   }
+
   .how_it_work .tab_section .tab-content .tab_items .info {
     width: 100%;
   }
@@ -204,27 +230,33 @@
 }
 
 @media screen and (max-width: 650px) {
+
   .pricing .price_content .tab-content .monthly_content,
   .pricing .price_content .tab-content .annualy_content {
     flex-wrap: wrap;
   }
+
   .pricing .price_content .tab-content .monthly_content .high_card,
   .pricing .price_content .tab-content .annualy_content .high_card {
     width: 100%;
   }
+
   .app_features .feature_content,
   #tile-1 .nav-tabs,
   footer .content {
     grid-template-columns: repeat(1, 1fr);
   }
+
   footer .content .section,
   .contact .contact_content .high_card {
     width: 100%;
     max-width: 100%;
   }
+
   header .top-bg {
     background-size: 269%;
   }
+
   header .bottom-bg {
     width: 186%;
     bottom: -50px;
@@ -238,6 +270,7 @@
     grid-template-columns: 1fr;
     row-gap: 40px;
   }
+
   .roadmap .all_steps .step {
     max-width: unset;
     margin: 0;
@@ -252,9 +285,11 @@
   .connection .all_connection {
     grid-template-columns: 1fr;
   }
+
   .connection .all_connection a {
     max-width: unset;
   }
+
   header .slider .content .info h1 {
     font-size: 32px;
     line-height: 43px;
@@ -264,85 +299,51 @@
     font-size: 20px;
     line-height: 30px;
   }
+
   .top .sub_tag {
     padding: 10px 25px;
   }
+
   .how_it_work .tab_section .tab-content .tab_items .image {
     width: 100%;
   }
+
   .pricing .price_content .nav-tabs {
     margin-bottom: 30px;
   }
+
   .pricing .price_content .tab-content .monthly_content .high_card .card_head p,
-  .pricing
-    .price_content
-    .tab-content
-    .annualy_content
-    .high_card
-    .card_head
-    p {
+  .pricing .price_content .tab-content .annualy_content .high_card .card_head p {
     font-size: 18px;
   }
-  .pricing
-    .price_content
-    .tab-content
-    .monthly_content
-    .high_card
-    .card_head
-    h3,
-  .pricing
-    .price_content
-    .tab-content
-    .annualy_content
-    .high_card
-    .card_head
-    h3,
-  .pricing
-    .price_content
-    .tab-content
-    .monthly_content
-    .professional.high_card
-    .card_head
-    h3,
-  .pricing
-    .price_content
-    .tab-content
-    .annualy_content
-    .professional.high_card
-    .card_head
-    h3 {
+
+  .pricing .price_content .tab-content .monthly_content .high_card .card_head h3,
+  .pricing .price_content .tab-content .annualy_content .high_card .card_head h3,
+  .pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3,
+  .pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 {
     font-size: 40px;
   }
-  .pricing
-    .price_content
-    .tab-content
-    .monthly_content
-    .high_card
-    .card_body
-    ul
-    li,
-  .pricing
-    .price_content
-    .tab-content
-    .annualy_content
-    .high_card
-    .card_body
-    ul
-    li {
+
+  .pricing .price_content .tab-content .monthly_content .high_card .card_body ul li,
+  .pricing .price_content .tab-content .annualy_content .high_card .card_body ul li {
     font-size: 14px;
   }
+
   .pricing .price_content .tab-content .monthly_content .high_card,
   .pricing .price_content .tab-content .annualy_content .high_card {
     padding: 20px;
   }
+
   .app_features .feature_content .feature_card {
     padding: 20px;
     border-radius: 20px;
   }
+
   header .slider .content .info p {
     font-size: 14px;
     line-height: 28px;
   }
+
   .app_features .feature_bg {
     background-size: 485%;
     top: 0;
@@ -360,13 +361,11 @@
   }
 
   .connection .conntection_bg {
-    background: linear-gradient(
-        180deg,
+    background: linear-gradient(180deg,
         #161616 0%,
         rgba(22, 22, 22, 0.4) 20%,
         rgba(22, 22, 22, 0.4) 80%,
-        #161616 100%
-      ),
+        #161616 100%),
       url(../assets/connection-bg.png);
     background-position: top;
     background-size: 234%;
@@ -374,7 +373,7 @@
     bottom: unset;
   }
 
-  .blog .blog_content > .high_card {
+  .blog .blog_content>.high_card {
     width: calc(100vw - 40px);
   }
 
