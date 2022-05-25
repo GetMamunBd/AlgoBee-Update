@@ -869,7 +869,7 @@ span.checkmark.material-symbols-outlined {
 .pricing {
   position: relative;
   width: 100%;
-  padding: 100px 0 0;
+  padding: 100px 0 50px;
 }
 
 .pricing .price_content .nav-tabs {
@@ -879,8 +879,8 @@ span.checkmark.material-symbols-outlined {
   margin-bottom: 60px;
 }
 
-.pricing .price_content .tab-content .monthly_content,
-.pricing .price_content .tab-content .annualy_content {
+.pricing .price_content .tab_content .monthly_content,
+.pricing .price_content .tab_content .annualy_content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,65 +892,68 @@ span.checkmark.material-symbols-outlined {
           column-gap: 40px;
   row-gap: 60px;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card,
-.pricing .price_content .tab-content .annualy_content .high_card {
+.pricing .price_content .tab_content .monthly_content .high_card,
+.pricing .price_content .tab_content .annualy_content .high_card {
   padding: 40px;
   border-radius: 35px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-width: 280px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head {
   padding-bottom: 30px;
   border-bottom: 1px solid #2a2a2a;
   margin-bottom: 30px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head p,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head p {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head p,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head p {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   color: #fff;
   margin-bottom: 20px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head h3,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head h3 {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head h3,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head h3 {
   font-weight: 600;
-  font-size: 54px;
+  font-size: 42px;
   color: #fff;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head h3 sub,
-.pricing .price_content .tab-content .monthly_content .high_card .card_head h3 sup,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head h3 sub,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head h3 sup {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head h3 sub,
+.pricing .price_content .tab_content .monthly_content .high_card .card_head h3 sup,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head h3 sub,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head h3 sup {
   font-size: 40%;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head h3 sup,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head h3 sup {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head h3 sup,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head h3 sup {
   top: -30px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_head h3 sub,
-.pricing .price_content .tab-content .annualy_content .high_card .card_head h3 sub {
+.pricing .price_content .tab_content .monthly_content .high_card .card_head h3 sub,
+.pricing .price_content .tab_content .annualy_content .high_card .card_head h3 sub {
   bottom: -3px;
   left: -15px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_body,
-.pricing .price_content .tab-content .annualy_content .high_card .card_body {
-  margin-bottom: 60px;
+.pricing .price_content .tab_content .monthly_content .high_card .card_body,
+.pricing .price_content .tab_content .annualy_content .high_card .card_body {
+  margin-bottom: 40px;
 }
 
-.pricing .price_content .tab-content .monthly_content .high_card .card_body ul,
-.pricing .price_content .tab-content .annualy_content .high_card .card_body ul {
+.pricing .price_content .tab_content .monthly_content .high_card .card_body ul,
+.pricing .price_content .tab_content .annualy_content .high_card .card_body ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,41 +961,41 @@ span.checkmark.material-symbols-outlined {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 40px;
+  row-gap: 25px;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head p.title,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head p.title {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head p.title,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head p.title {
   color: #f93b42;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head h3,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head h3 {
   font-weight: 600;
-  font-size: 54px;
+  font-size: 42px;
   color: #fff;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3 sub,
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3 sup,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 sub,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 sup {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head h3 sub,
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head h3 sup,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head h3 sub,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head h3 sup {
   font-size: 40%;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3 sup,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 sup {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head h3 sup,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head h3 sup {
   top: -30px;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3 sub,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 sub {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head h3 sub,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head h3 sub {
   bottom: -3px;
   left: 0px;
 }
 
-.pricing .price_content .tab-content .monthly_content .professional.high_card .card_head p.recommended,
-.pricing .price_content .tab-content .annualy_content .professional.high_card .card_head p.recommended {
+.pricing .price_content .tab_content .monthly_content .professional.high_card .card_head p.recommended,
+.pricing .price_content .tab_content .annualy_content .professional.high_card .card_head p.recommended {
   display: inline-block;
   margin: 0;
   border-radius: 50px;
@@ -1022,6 +1025,7 @@ span.checkmark.material-symbols-outlined {
 }
 
 .roadmap {
+  display: none;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1610,6 +1614,11 @@ footer .content .section.social ul a:hover {
     width: 100%;
     max-width: 260px;
   }
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1842,13 +1851,13 @@ footer .content .section.social ul a:hover {
 }
 
 @media screen and (max-width: 650px) {
-  .pricing .price_content .tab-content .monthly_content,
-  .pricing .price_content .tab-content .annualy_content {
+  .pricing .price_content .tab_content .monthly_content,
+  .pricing .price_content .tab_content .annualy_content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     width: 100%;
   }
   .app_features .feature_content,
@@ -1911,22 +1920,66 @@ footer .content .section.social ul a:hover {
   .pricing .price_content .nav-tabs {
     margin-bottom: 30px;
   }
-  .pricing .price_content .tab-content .monthly_content .high_card .card_head p,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_head p {
+  .pricing .price_content .tab_content .monthly_content .high_card .card_head p,
+  .pricing
+.price_content
+.tab_content
+.annualy_content
+.high_card
+.card_head
+p {
     font-size: 18px;
   }
-  .pricing .price_content .tab-content .monthly_content .high_card .card_head h3,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_head h3,
-  .pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3,
-  .pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 {
+  .pricing
+.price_content
+.tab_content
+.monthly_content
+.high_card
+.card_head
+h3,
+  .pricing
+.price_content
+.tab_content
+.annualy_content
+.high_card
+.card_head
+h3,
+  .pricing
+.price_content
+.tab_content
+.monthly_content
+.professional.high_card
+.card_head
+h3,
+  .pricing
+.price_content
+.tab_content
+.annualy_content
+.professional.high_card
+.card_head
+h3 {
     font-size: 40px;
   }
-  .pricing .price_content .tab-content .monthly_content .high_card .card_body ul li,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_body ul li {
+  .pricing
+.price_content
+.tab_content
+.monthly_content
+.high_card
+.card_body
+ul
+li,
+  .pricing
+.price_content
+.tab_content
+.annualy_content
+.high_card
+.card_body
+ul
+li {
     font-size: 14px;
   }
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     padding: 20px;
   }
   .app_features .feature_content .feature_card {
@@ -1961,8 +2014,8 @@ footer .content .section.social ul a:hover {
   .blog .blog_content > .high_card {
     width: calc(100vw - 40px);
   }
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     border-radius: 15px;
   }
 }

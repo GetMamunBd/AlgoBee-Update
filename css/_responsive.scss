@@ -3,6 +3,12 @@
     width: 100%;
     max-width: 260px;
   }
+
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -230,14 +236,13 @@
 }
 
 @media screen and (max-width: 650px) {
-
-  .pricing .price_content .tab-content .monthly_content,
-  .pricing .price_content .tab-content .annualy_content {
+  .pricing .price_content .tab_content .monthly_content,
+  .pricing .price_content .tab_content .annualy_content {
     flex-wrap: wrap;
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     width: 100%;
   }
 
@@ -312,25 +317,69 @@
     margin-bottom: 30px;
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card .card_head p,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_head p {
+  .pricing .price_content .tab_content .monthly_content .high_card .card_head p,
+  .pricing
+    .price_content
+    .tab_content
+    .annualy_content
+    .high_card
+    .card_head
+    p {
     font-size: 18px;
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card .card_head h3,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_head h3,
-  .pricing .price_content .tab-content .monthly_content .professional.high_card .card_head h3,
-  .pricing .price_content .tab-content .annualy_content .professional.high_card .card_head h3 {
+  .pricing
+    .price_content
+    .tab_content
+    .monthly_content
+    .high_card
+    .card_head
+    h3,
+  .pricing
+    .price_content
+    .tab_content
+    .annualy_content
+    .high_card
+    .card_head
+    h3,
+  .pricing
+    .price_content
+    .tab_content
+    .monthly_content
+    .professional.high_card
+    .card_head
+    h3,
+  .pricing
+    .price_content
+    .tab_content
+    .annualy_content
+    .professional.high_card
+    .card_head
+    h3 {
     font-size: 40px;
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card .card_body ul li,
-  .pricing .price_content .tab-content .annualy_content .high_card .card_body ul li {
+  .pricing
+    .price_content
+    .tab_content
+    .monthly_content
+    .high_card
+    .card_body
+    ul
+    li,
+  .pricing
+    .price_content
+    .tab_content
+    .annualy_content
+    .high_card
+    .card_body
+    ul
+    li {
     font-size: 14px;
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     padding: 20px;
   }
 
@@ -361,11 +410,13 @@
   }
 
   .connection .conntection_bg {
-    background: linear-gradient(180deg,
+    background: linear-gradient(
+        180deg,
         #161616 0%,
         rgba(22, 22, 22, 0.4) 20%,
         rgba(22, 22, 22, 0.4) 80%,
-        #161616 100%),
+        #161616 100%
+      ),
       url(../assets/connection-bg.png);
     background-position: top;
     background-size: 234%;
@@ -373,12 +424,12 @@
     bottom: unset;
   }
 
-  .blog .blog_content>.high_card {
+  .blog .blog_content > .high_card {
     width: calc(100vw - 40px);
   }
 
-  .pricing .price_content .tab-content .monthly_content .high_card,
-  .pricing .price_content .tab-content .annualy_content .high_card {
+  .pricing .price_content .tab_content .monthly_content .high_card,
+  .pricing .price_content .tab_content .annualy_content .high_card {
     border-radius: 15px;
   }
 }

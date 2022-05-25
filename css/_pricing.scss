@@ -58,7 +58,7 @@
 .pricing {
   position: relative;
   width: 100%;
-  padding: 100px 0 0;
+  padding: 100px 0 50px;
 
   .price_content {
     .nav-tabs {
@@ -67,7 +67,7 @@
       margin: 0 auto;
       margin-bottom: 60px;
     }
-    .tab-content {
+    .tab_content {
       .monthly_content,
       .annualy_content {
         width: 100%;
@@ -76,11 +76,13 @@
         column-gap: 40px;
         row-gap: 60px;
         text-align: center;
+        flex-wrap: wrap;
 
         .high_card {
           padding: 40px;
           border-radius: 35px;
           height: fit-content;
+          min-width: 280px;
 
           .card_head {
             padding-bottom: 30px;
@@ -89,14 +91,14 @@
 
             p {
               font-weight: normal;
-              font-size: 24px;
+              font-size: 18px;
               line-height: 28px;
               color: #fff;
               margin-bottom: 20px;
             }
             h3 {
               font-weight: 600;
-              font-size: 54px;
+              font-size: 42px;
               color: #fff;
               sub,
               sup {
@@ -112,11 +114,11 @@
             }
           }
           .card_body {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             ul {
               display: flex;
               flex-direction: column;
-              row-gap: 40px;
+              row-gap: 25px;
             }
           }
         }
@@ -127,7 +129,7 @@
             }
             h3 {
               font-weight: 600;
-              font-size: 54px;
+              font-size: 42px;
               color: #fff;
               sub,
               sup {
