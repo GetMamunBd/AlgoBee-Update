@@ -706,7 +706,7 @@ header .slider .content .slider_image img {
 
 .how_it_work .tab_section .tab-content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1170px;
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -727,7 +727,7 @@ header .slider .content .slider_image img {
 }
 
 .how_it_work .tab_section .tab-content .tab_items .image {
-  width: 415px;
+  width: 100%;
 }
 
 .how_it_work .tab_section .tab-content .tab_items .image img {
